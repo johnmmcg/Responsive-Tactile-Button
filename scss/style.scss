@@ -1,0 +1,51 @@
+$asphalt: #34495e;
+$blue: #3498db;
+$emerald: #2ecc71;
+
+$arvo: 'Arvo', serif;
+ 
+
+body {
+  background-color: $blue;
+}
+
+div {
+  text-align: center;
+  margin: 10%;
+  height: 100%;
+}
+
+button {
+  color: $asphalt;
+  background-color: $emerald;
+  text-align: center;
+  font-size: 5vw;
+  padding: 15px;
+  font-family: $arvo;
+  font-weight: 500;
+  overflow: hidden;
+  width: 30%;
+  border: {
+    color: $asphalt;
+    style: solid;
+    width: 7px;
+    radius: 15px;
+  };
+  outline: none;
+  box-shadow: -15px 15px 0px $asphalt;
+  transition: 0.2s;
+  
+  &:hover {
+    color: $emerald;
+    background-color: $asphalt;
+    border-color: $emerald;
+    transition: .3s;
+  }
+  
+  &:active {
+    border-width: 5px;
+    box-shadow: 0px 0px 0px rgba(52, 73, 94,1.0);
+    transform: translate(-15px, 15px);
+  }
+}
+
